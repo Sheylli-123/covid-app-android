@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="LetsGrowMore"
+        android:textAlignment="center"
+        android:textColor="#B8860B"
+        android:textSize="50dp"
+        android:paddingBottom="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/covid">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="112dp"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingRight="32dp"
+        android:text="COVID-19 Tracker"
+        android:textAlignment="center"
+        android:textColor="#800000"
+        android:textSize="35sp"
+        android:textStyle="bold">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recview"
+        tools:listitem="@layout/testing"
+        />
+
+
+
+</RelativeLayout>
